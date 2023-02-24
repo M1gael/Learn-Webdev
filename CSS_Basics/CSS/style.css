@@ -73,7 +73,7 @@ a:visited{
     border-top: 5px red dotted;
     */
 
-    padding:20px;
+    padding:20px ;
     /*can also specify -top , - bottom etc , or leave a space to do
     top right down left*/
 
@@ -95,14 +95,19 @@ a:visited{
 
 .box-2{
     border: 5px dotted #ccc;
-    padding: 20px ;
+    padding: 20px;
     margin: 20px;   
+}
+
+.text-area{
+    width: 30%;
 }
 
 .categories{
     border: 1px #ccc solid;
-    padding: 20px;
+    padding: 20px  ;
     border-radius: 15px;
+    margin: 20px;
     /*Rounds edges*/
 }
 
@@ -142,9 +147,29 @@ a:visited{
 
 .block{
     float: left;
-    width: 33.3%;
+    width: 30%;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    /*Helps fit everything into width*/
+    /*Helps fit everything into width , does not account for padding , margin or borders*/
+    margin: 20px;
+}
+
+#main-block{
+    float:left;
+    width: 70%;
+    margin: 20px;
+    /*Makes this item float to the left and use 70% of screen*/
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar{
+    float:right;
+    width: 30%;
+    margin: 20px;
+    background-color: darkgray;
+    color:#fff;
+    padding: 15px;
+    box-sizing: border-box;
 }
