@@ -99,9 +99,6 @@ a:visited{
     margin: 20px;   
 }
 
-.text-area{
-    width: 30%;
-}
 
 .categories{
     border: 1px #ccc solid;
@@ -134,6 +131,7 @@ a:visited{
 
 .form-group{
     padding-bottom: 15px;
+    width: 20%;
 }
 
 .my-form label{
@@ -157,19 +155,17 @@ a:visited{
 
 #main-block{
     float:left;
-    width: 70%;
+    width: 60%;
     margin: 20px;
     /*Makes this item float to the left and use 70% of screen*/
-    padding: 15px;
     box-sizing: border-box;
 }
 
 #side-bar{
     float:right;
-    width: 30%;
+    width: 20%;
     margin: 20px;
     background-color: darkgray;
     color:#fff;
-    padding: 15px;
     box-sizing: border-box;
 }
