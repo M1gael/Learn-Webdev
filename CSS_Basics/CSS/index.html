@@ -9,12 +9,10 @@
 </head>
 <body>
 
-    <div class="container"></div>
-    <div class="box-1">
-    <!--Use class to re apply styles you want to use more than once , and ID for once off uses-->
+    <div class="container" , class="box-1">
+    <!--Use class to re apply styles you want to use more than once, can declare more than one class at once , and ID for once off uses-->
         <h1>Hello World</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iure labore repellat harum quia quae molestias earum sit excepturi vitae veritatis minima illum, accusamus tenetur ut cupiditate iste omnis perspiciatis.</p>
-    </div>
     </div>
 
     <div class="box-2">
@@ -22,8 +20,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iure labore repellat harum quia quae molestias earum sit excepturi vitae veritatis minima illum, accusamus tenetur ut cupiditate iste omnis perspiciatis.</p>
         <a class="button" href="">Read More</a>
     </div>
-    </div>
-
+   
     <div class="categories">
         <h2>Catagoies</h2>
         <ul>
@@ -36,41 +33,45 @@
 
 
 <form class="my-form" action="Process.php" method="POST">
-
-    <div class="form-group">                            <!--div to keep in own line-->
+    <div class="form-group">                            
         <label for="First Name">Name</label>        
         <input type="text" name="firstName" placeholder="Enter first name ">
     </div>
-                          
-    <br>
 
-    <div class="form-group">                            <!--div to keep in own line-->
+    <div class="form-group">                            
         <label for="Email">Email</label>        
-        <input type="email" name="email" placeholder="Enter your email adress ">
-    </div>
-                          
-    <br>
+        <input type="email" name="email" placeholder="Enter your email ">
+    </div>                  
 
+    <div class="form-group">                            
+        <label for="Email">Message</label>        
+        <textarea id="message" name="message" placeholder="Enter your message "></textarea>
+    </div>   
+    
     <div class="button">                           
         <input  type="submit" value="Submit" name="">
     </div>
-
 </form>
-<div>
-    <div class="block">
+
+<br>
+    
+<div class="block">
+    <div>
         <h3>Heading</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quo dolorum cum rerum quasi consectetur repellendus quae est fugit odio tenetur voluptates, explicabo beatae molestiae sint tempora exercitationem sed hic.</p>
     </div>
 
-    <div class="block">
+    <div>
         <h3>Heading</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quo dolorum cum rerum quasi consectetur repellendus quae est fugit odio tenetur voluptates, explicabo beatae molestiae sint tempora exercitationem sed hic.</p>
     </div>
 
-    <div class="block">
+    <div>
         <h3>Heading</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quo dolorum cum rerum quasi consectetur repellendus quae est fugit odio tenetur voluptates, explicabo beatae molestiae sint tempora exercitationem sed hic.</p>
     </div>
+</div>
+    
 
     <div id="main-block">
         <h3>Heading</h3>
@@ -80,7 +81,6 @@
     <div id="side-bar">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quo dolorum cum rerum quasi consectetur repellendus quae est fugit odio tenetur voluptates, explicabo beatae molestiae sint tempora exercitationem sed hic.</p>
     </div>
-</div>
     <br>
 
 
