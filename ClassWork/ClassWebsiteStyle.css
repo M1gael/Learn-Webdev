@@ -1,0 +1,14 @@
+body{
+    background-image:url(ClassWebsiteBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+width: 50%;
+height: 100%;
+margin-top: 20%;
+margin-bottom: 20%;
+margin-left: 5%;
+}
+
