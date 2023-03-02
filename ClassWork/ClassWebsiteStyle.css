@@ -1,11 +1,14 @@
 body{
-    background-image:url(ClassWebsiteBackground.png);
-    background-repeat: no-repeat;
+    background-image:url(ClassWebsiteBackground.jpg);
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    height:730px;
 }
 
 .container{
-width: 50%;
+width: 30%;
 height: 100%;
 margin-top: 20%;
 margin-bottom: 20%;
