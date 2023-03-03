@@ -1,17 +1,52 @@
-body{
-    background-image:url(ClassWebsiteBackground.jpg);
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height:730px;
+html , body {
+    height: 100%;
+   
+    margin: 0%;
+    padding: 0%;
 }
 
-.container{
-width: 30%;
-height: 100%;
-margin-top: 20%;
-margin-bottom: 20%;
-margin-left: 5%;
+.container-group{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    border: 5px red solid;
+
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.container-left{
+    height:100%;
+    width: 50%;
+    border: 5px green solid;
+    padding:10% 2%;
+    box-sizing: border-box;
+    
+    background-position: center;
+    background-image: url("ClassWebsiteBackgroundLeft.jpg");
+    
+    box-shadow: inset 0 0 0 1000px rgba(148,208,255,.2)
+}
+
+.box-top{
+    color: rgb(248, 248, 248);
+    font-family: sans-serif;
+}
+
+.box-bottom{
+}
+
+.container-right{
+    height:100%;
+    width: 50%;
+    border: 5px blue solid;
+    box-sizing: border-box;   
+    
+    background-position: center;
+    background-image: url("ClassWebsiteBackgroundRight.jpg");
+
+    box-shadow: inset 0 0 0 1000px rgba(255,106,213,.2)
 }
 
