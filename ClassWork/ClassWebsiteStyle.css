@@ -107,8 +107,7 @@ html , body {
     width: 3%;
     margin-top :37% ;
     margin-left: 96%;
-    padding: 4px;
-    padding-top: 2%;
+    padding-top: 3px;
     position: absolute;
     box-sizing: border-box;
 }
@@ -116,12 +115,14 @@ html , body {
 .fa{
     height: 30px;
     width: 30px;
-    margin: 4px 1px;
+    margin: 8px;
     padding: 0;
+    border-radius: 45%;
+    object-position: center;
 
-    text-align: center;
     text-decoration: none;
-    color: gainsboro;
-    
+    color: rgb(67, 67, 67);
+    background-color: lightgray;
+
     box-sizing: border-box;
 }
