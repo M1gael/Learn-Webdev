@@ -14,9 +14,11 @@
     
     <h1>Learning Outcomes C</h1>
 
+<hr>
+
     <h2>Reset Style Sheet</h2>
     <p>
-        Reset the entire style sheet in css using [  *{margin:0 ;  padding: 0;} ]
+        Reset the entire style sheet in css using <b>[  *{margin:0 ;  padding: 0;} ]</b>
         "*" representing "all"
     </p>
 
@@ -26,11 +28,13 @@
     
     <h3>Fixed layout</h3>
     <p>Size of the page and elements are fixed , usually using pixels <br>
-    [Width :200px ; height : 150px]</p>
+    <b>[Width :200px ; height : 150px]</b>
+    </p>
 
     <h3>Fluid layout</h3>
     <p>The width of the page elements are set as a percent of the avalable screen width <br>
-    [Width :100% ; height : 50%]</p>
+    <b>[Width :100% ; height : 50%]</b>
+    </p>
 
     <h3>Elastic layout</h3>
     <p>images and text are always sized in proportion to each other in em units</p>
@@ -41,50 +45,63 @@
     
     <h3>Horizontal centering</h3>
     <p>Block elements can be centered horizontally within their parent element by setting both the left and right margin to auto <br>
-    [margin-left : auto] [margin-right-auto]</p>
+    <b>[margin-left : auto] [margin-right-auto]</b>
+    </p>
 
     <h3>Vertical Centering</h3>
     <p>Centering an element verically can be acomplished by displaying the parent element as a table cell and setting the vertical-align to middle <br>
-        [height :80px;]
-        [display : table-cell;]
-        [vertical-align : middle;]
+        <b>[height :80px;]</b>
+        <b>[display : table-cell;]</b>
+        <b>[vertical-align : middle;]</b>
     </p>
+
+    <p id="centre-block-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias asperiores at nostrum sint, nisi adipisci similique? Illum error tenetur sunt placeat molestiae repudiandae incidunt eligendi, aspernatur, nulla fugit id.</p>
 
 <hr>
 
     <h2>Creating a Float Element</h2>
-    <p>This propperty specifies wether an element should move to the left , right , or not at all</p>
-    <h3>[float : position/value]</h3>
+    <p>This propperty specifies wether an element should move to the left , right , or not at all <br>
+    <b>[float : position/value]</b>
+    </p>
 
     <p>none - the element does not float (Displays just where it occurs in text).</p>
     <p> left - the element floats to the left of its container.</p>
     <p>right - the element floats to the right of the container.</p>
     <p>initial - sets the property to its default value.</p>
     <p>inherit - inherits this property from its parent element.</p>
+
+    <p id="create-float-element">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illo, quidem accusamus officiis ullam veniam iste optio accusantium quam quia sint culpa placeat nihil voluptatem odio aliquid, architecto tempora animi!</p>
+
 <hr>
 
     <h2>Clear a Floating Layout</h2>
     <p><b>Css Clear</b> is for indicating whether HTML elements should move below the floating element that come before it
         OR it specifies what should happen with the element that is next to a floating element.
-    <b>[clear:position; (applying the propperty)].</b>
+    <b>[clear:position; (applying the propperty)].</b> <br>
 
     <br>
 
-    <p>left - the element is pushed below left floated elements.</p>
-    <p>right - the element is pushed below right floating elements.</p>
-    <p>both - the element is pushed below both left and right floated elements.</p>
-    <p>none - the element is not pushed below left or right floated elements.</p>
-    <p>inherit - the element inherits the clear value from its parent.</p>
+    left - the element is pushed below left floated elements.<br>
+    right - the element is pushed below right floating elements.<br>
+    both - the element is pushed below both left and right floated elements.<br>
+    none - the element is not pushed below left or right floated elements.<br>
+    inherit - the element inherits the clear value from its parent.<br>
 
-
+    <p id="clear-float-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium aspernatur quisquam suscipit est ea error dicta, commodi a, eius quia esse nisi fugiat dolorum nam eaque. Dicta odio molestiae facere.</p>
 <hr>
 
     <h2>Prevent Container Collapse</h2>
+    
     <p><b>Container collapse</b> - elements with float property are removed fom the document flow so the sizes stay unknown for the parent element (as nothing is contained in it) so it is set to 0.</p>
-    <p><b>Method 1: Using Overflow Property--[overflow:auto].</b></p>
-    <p><b>Method 2: Making Parent Floated --[float:left].</b></p>
-    <p><b>Method 3: Specifying height Explicitly --[hegiht:30px].</b></p>
-    <p><b>Method 4: Using display and clear properties --[display:table; clear:both].</b></p>
+    
+    <p>
+    <b>Method 1:</b> Using Overflow Property--[overflow:auto].<br>
+    <b>Method 2:</b> Making Parent Floated --[float:left].<br>
+    <b>Method 3:</b> Specifying height Explicitly --[hegiht:30px].<br>
+    <b>Method 4:</b> Using display and clear properties --[display:table; clear:both].<br>
+    </p>
+
+    <p id="prevent-container-collapse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, unde recusandae? Delectus repellendus ipsum, accusantium pariatur dicta iste impedit fugit ipsam quis. Soluta necessitatibus inventore quas non sint. Ipsam, quia?</p>
 
 <hr>
 
@@ -93,25 +110,48 @@
     <p><b>The CSS Gid Layout Module </b>offers a grid-based layout system , with rows and colomns , making it easier to design web pages without having to use floats and positioning.</p>
     </div>
     <h3>Two Types of Table Cells</h3>
-    <p><b>Fixed grids - </b>every column has a fixed position (columns widths and margins are specified in pixels).</p>
-    <p><b>Fluid grids - </b>provides support for devices with different screen sizes (columns widths are in percentages).</p>
+    <p>
+    <b>Fixed grids - </b>every column has a fixed position (columns widths and margins are specified in pixels). <br>
+    <b>Fluid grids - </b>provides support for devices with different screen sizes (columns widths are in percentages). <br>
+    </p>
 
+    <p id="grid-based-layout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum aliquam porro ab provident animi minima dignissimos dolorum incidunt? Iste culpa ducimus reiciendis animi ipsa quisquam perspiciatis odit nobis magnam.</p>
 <hr>
 
     <h2>Positioning Styles</h2>
-    <P><b>Position property </b>specifies the type of positioning method used for an element <b>[position: static , absolute , fixed , sticky , initial , inherit ]</b></P>
-    <div></div>
-    <p><b>static - </b>default value.</p>
-    <p><b>absolute - </b>the element is positioned relative to its first positioned.</p>
-    <p><b>fixed - </b>the element is postioned relative to the browser window.</p>
-    <p><b>relative - </b>the element is positioned relative to its normal position.</p>
-    <p><b>sticky - </b>the element is postioned based on the users scroll position.</p>
-    <p><b>inherit - </b>inherits the property from its parent element.</p>
+    <P><b>Position property </b>specifies the type of positioning method used for an element <b>[position: static , absolute , fixed , sticky , initial , inherit ]</b> <br>
+    <br>
+    <b>static - </b>default value. <br>
+    <b>absolute - </b>the element is positioned relative to its first positioned. <br>
+    <b>fixed - </b>the element is postioned relative to the browser window. <br>
+    <b>relative - </b>the element is positioned relative to its normal position. <br>
+    <b>sticky - </b>the element is postioned based on the users scroll position. <br>
+    <b>inherit - </b>inherits the property from its parent element. <br>
+    </P>
+
+    <p id="positioning-styles"></p>
 
 <hr>
 
     <h2>Relative postioning</h2>
-    <p>Relative places an element relative to its current position without changing the layout around it</p>
+    <p>Relative places an element relative to its current position without changing the layout around it <br>
+    <b>[position : relative;] [left:40px] [top:10px]</b>
+    </p>
+
+    <p id="relative-positioning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni amet, corrupti facere delectus ex, eveniet, reprehenderit officia eos fuga consequatur natus minima molestias architecto veniam nisi! Suscipit ipsum molestias recusandae.</p>
+<hr>
+
+    <h2>Absolute postioning</h2>
+    <p>Absolute places an element relative to its parent's position and changing the layout around it <br>
+    <b>[position : absolute;] [left:100px] [top:100px]</b>
+    </p>
+
+    <p id="absolute-positioning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ullam velit officia blanditiis nostrum ipsum qui, minima est magni odio dignissimos sed quas mollitia nobis inventore, modi doloribus ab? Consectetur.</p>
+
+<hr>
+
+    <h2>Overflow content</h2>
+    <p id="overflow-content">Overflow is what happens when there is too much content to fit in a container</p>
 
 
 </body>
