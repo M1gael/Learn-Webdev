@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learning-outcomes-c.css">
+    <title>Learning Outcome C</title>
+</head>
+
+<body>
+
+<hr>
+    
+    <h1>Learning Outcomes C</h1>
+
+    <h2>Reset Style Sheet</h2>
+    <p>
+        Reset the entire style sheet in css using [  *{margin:0 ;  padding: 0;} ]
+        "*" representing "all"
+    </p>
+
+<hr>
+
+    <h2>Page Layout Designs</h2>
+    
+    <h3>Fixed layout</h3>
+    <p>Size of the page and elements are fixed , usually using pixels <br>
+    [Width :200px ; height : 150px]</p>
+
+    <h3>Fluid layout</h3>
+    <p>The width of the page elements are set as a percent of the avalable screen width <br>
+    [Width :100% ; height : 50%]</p>
+
+    <h3>Elastic layout</h3>
+    <p>images and text are always sized in proportion to each other in em units</p>
+
+<hr>
+
+    <h2>Centre a Block Element</h2>
+    
+    <h3>Horizontal centering</h3>
+    <p>Block elements can be centered horizontally within their parent element by setting both the left and right margin to auto <br>
+    [margin-left : auto] [margin-right-auto]</p>
+
+    <h3>Vertical Centering</h3>
+    <p>Centering an element verically can be acomplished by displaying the parent element as a table cell and setting the vertical-align to middle <br>
+        [height :80px;]
+        [display : table-cell;]
+        [vertical-align : middle;]
+    </p>
+
+<hr>
+
+    <h2>Creating a Float Element</h2>
+    <p>This propperty specifies wether an element should move to the left , right , or not at all</p>
+    <h3>[float : position/value]</h3>
+
+    <p>none - the element does not float (Displays just where it occurs in text).</p>
+    <p> left - the element floats to the left of its container.</p>
+    <p>right - the element floats to the right of the container.</p>
+    <p>initial - sets the property to its default value.</p>
+    <p>inherit - inherits this property from its parent element.</p>
+<hr>
+
+    <h2>Clear a Floating Layout</h2>
+    <p><b>Css Clear</b> is for indicating whether HTML elements should move below the floating element that come before it
+        OR it specifies what should happen with the element that is next to a floating element.
+    <b>[clear:position; (applying the propperty)].</b>
+
+    <br>
+
+    <p>left - the element is pushed below left floated elements.</p>
+    <p>right - the element is pushed below right floating elements.</p>
+    <p>both - the element is pushed below both left and right floated elements.</p>
+    <p>none - the element is not pushed below left or right floated elements.</p>
+    <p>inherit - the element inherits the clear value from its parent.</p>
+
+
+<hr>
+
+    <h2>Prevent Container Collapse</h2>
+    <p><b>Container collapse</b> - elements with float property are removed fom the document flow so the sizes stay unknown for the parent element (as nothing is contained in it) so it is set to 0.</p>
+    <p><b>Method 1: Using Overflow Property--[overflow:auto].</b></p>
+    <p><b>Method 2: Making Parent Floated --[float:left].</b></p>
+    <p><b>Method 3: Specifying height Explicitly --[hegiht:30px].</b></p>
+    <p><b>Method 4: Using display and clear properties --[display:table; clear:both].</b></p>
+
+<hr>
+
+    <div>
+    <h2>Grid Based Layouts</h2>
+    <p><b>The CSS Gid Layout Module </b>offers a grid-based layout system , with rows and colomns , making it easier to design web pages without having to use floats and positioning.</p>
+    </div>
+    <h3>Two Types of Table Cells</h3>
+    <p><b>Fixed grids - </b>every column has a fixed position (columns widths and margins are specified in pixels).</p>
+    <p><b>Fluid grids - </b>provides support for devices with different screen sizes (columns widths are in percentages).</p>
+
+<hr>
+
+    <h2>Positioning Styles</h2>
+    <P><b>Position property </b>specifies the type of positioning method used for an element <b>[position: static , absolute , fixed , sticky , initial , inherit ]</b></P>
+    <div></div>
+    <p><b>static - </b>default value.</p>
+    <p><b>absolute - </b>the element is positioned relative to its first positioned.</p>
+    <p><b>fixed - </b>the element is postioned relative to the browser window.</p>
+    <p><b>relative - </b>the element is positioned relative to its normal position.</p>
+    <p><b>sticky - </b>the element is postioned based on the users scroll position.</p>
+    <p><b>inherit - </b>inherits the property from its parent element.</p>
+
+<hr>
+
+    <h2>Relative postioning</h2>
+    <p>Relative places an element relative to its current position without changing the layout around it</p>
+
+
+</body>
+</html>
