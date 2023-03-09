@@ -26,3 +26,39 @@ h3{
 p{
     margin-bottom: 10px;
 }
+
+#centre-block-element{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#create-float-element{
+  float:left;               /*Wont propperly work if its not contained*/
+}
+
+#clear-float-element{
+    clear:inherit;
+}
+
+#prevent-container-collapse{
+    overflow:auto
+}
+
+#grid-based-layout{
+}
+
+#positioning-styles{ 
+    position: static;
+}
+
+#relative-positioning{
+    position: relative;
+    left: 33.333%;             /*can use pixels or any other unit*/
+
+}
+
+#absolute-positioning{
+    position: absolute;
+    left: 33.333%;             /*can use pixels or any other unit*/
+
+}
