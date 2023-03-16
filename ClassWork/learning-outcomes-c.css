@@ -27,6 +27,22 @@ p{
     margin-bottom: 10px;
 }
 
+.objectives h2{
+    text-align: center;
+    border: solid black 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.objectives ol li{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
 #centre-block-element{
     margin-left: auto;
     margin-right: auto;
@@ -61,4 +77,10 @@ p{
     position: absolute;
     left: 33.333%;             /*can use pixels or any other unit*/
 
+}
+
+#overflow-content{
+    overflow: hidden;
+    overflow-x:scroll;          /*or -y*/
+    overflow: auto;
 }
