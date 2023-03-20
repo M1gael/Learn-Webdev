@@ -47,16 +47,27 @@ p , figure {
 }
 
 .example-container{
-    height: 100px;
-    width: 20%;
+    height: 200px;
+    width: 30%;
     margin: auto;
     margin-bottom: 10px;
 }
 
 #figure{
-    background-color: red;   
+    background-color: red;
 }
 
 #background-image{
     background-color: red;
+    background-image: url(../HTML_Basics/drunkrick.jpg);
+    background-size: cover;
+}
+
+#element-borders{
+    border: dotted grey 3px;
+    border-radius: 10%;
+}
+
+#text-shadow{
+    text-shadow: 1px 1px 2px red;
 }
