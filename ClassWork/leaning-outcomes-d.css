@@ -46,6 +46,17 @@ p , figure {
     
 }
 
+.example-container{
+    height: 100px;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#figure{
+    background-color: red;   
+}
+
 #background-image{
-    background-image: -o-linear-gradient(red , blue);
+    background-color: red;
 }
