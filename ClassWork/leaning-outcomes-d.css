@@ -23,9 +23,11 @@ h3{
     margin-top: 10px;
 }
 
-p{
+p , figure {
     margin-bottom: 10px;
+    margin-left: 10px;
 }
+
 
 .objectives h2{
     text-align: center;
@@ -42,4 +44,8 @@ p{
     margin-bottom: 10px;
     font-weight: bold;
     
+}
+
+#background-image{
+    background-image: -o-linear-gradient(red , blue);
 }
