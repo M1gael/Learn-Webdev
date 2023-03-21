@@ -89,3 +89,14 @@ p , figure {
     background-image: url(../HTML_Basics/drunkrick.jpg);
     opacity: 0.5;
 }
+
+#translate-2d{
+    background-image: url(../HTML_Basics/drunkrick.jpg);
+}
+
+#translate-3d{
+    background-image: url(../HTML_Basics/drunkrick.jpg);
+    transform:rotateX(5deg); 
+    transform:rotateY(5deg);
+    transform:rotateZ(5deg);
+}
