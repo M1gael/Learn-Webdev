@@ -51,6 +51,7 @@ p , figure {
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #figure{
@@ -70,4 +71,21 @@ p , figure {
 
 #text-shadow{
     text-shadow: 1px 1px 2px red;
+}
+
+#box-shadow{
+    box-shadow: red 1px 5px 4px;
+}
+
+#linear-gradient{
+    background-image: linear-gradient(to right , red , blue);
+}
+
+#radial-gradient{
+    background-image: radial-gradient(red , blue);
+}
+
+#opacity{
+    background-image: url(../HTML_Basics/drunkrick.jpg);
+    opacity: 0.5;
 }
