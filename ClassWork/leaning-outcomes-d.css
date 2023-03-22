@@ -100,3 +100,8 @@ p , figure {
     transform:rotateY(5deg);
     transform:rotateZ(5deg);
 }
+
+#filters{
+    background-image: url(../HTML_Basics/drunkrick.jpg);
+    filter: grayscale(100%);
+}
