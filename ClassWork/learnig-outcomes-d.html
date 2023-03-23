@@ -144,12 +144,19 @@
 
     <p>The HTML [map] tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more [area] tags. </p>
 
-    <p></p>
+    <p><b>[area shape="rect" coords="34, 44, 270, 350" href="rick.htm"]</b></p>
     
-    <div id="image-map" class="example-container">
-    <img src="../HTML_Basics/drunkrick.jpg" alt="Image not loaded" usemap="#workmap">
-    </div>
+    <p>Rick's head is now clickable</p>
+
+    <img id="example-container-img"  src="../HTML_Basics/drunkrick.jpg" alt="Image not loaded" usemap="#workmap">
+    
+    <map name="workmap">
+        <area target="" alt="Rick" title="Rick" href="rick.htm" coords="1139,377,97" shape="circle">
+    </map>
+    
 <hr>
+
+
 
 </body>
 </html>

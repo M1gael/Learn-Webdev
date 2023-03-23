@@ -46,13 +46,14 @@ p , figure {
     
 }
 
-.example-container{
+.example-container {
     height: 200px;
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center;   
 }
+
 
 #figure{
     background-color: red;
@@ -106,6 +107,13 @@ p , figure {
     filter: grayscale(100%);
 }
 
-#image-map{
-    background-size: contain;
+#example-container-img {
+    display: block;
+    margin: auto;
+
+    height: auto;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+     
 }
