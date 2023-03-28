@@ -13,8 +13,101 @@
 
 <hr>
 
-<h2>Objectives:</h2>
+    <div class="objectives">
+    <h2>Objectives:</h2>    
+    <ol>
+        <li>Web Tables</li>
+        <li>Table Headings and Data Cells</li>
+        <li>Apply CSS to Tables</li>
+        <li>Cells that span mutliple rows</li>
+        <li>Table captions</li>
+        <li>Row and Column groups</li>
+        <li>Style Row and Column Groups</li>
+        <li>Display page elements in table form</li>
+        <li>Multi Column Layout</li>
+    </ol>
+    </div>
 
+<hr>
 
-</body>
+    <h2>Web Tables</h2>
+
+    <ul>
+        <li>HTML table structure consists of multiple table rows.</li>
+        <li>Each table row contains one or more table cells.</li>
+        <li>An optional caption.</li>
+        <li>Each row group consists of an optional head section, an optional foot section, and a series of
+            rows.</li>
+    </ul>
+
+    <p> <b>table</b> html element used to create a table <br>
+        <b>tr</b> -create table rows <br>
+        <b>th</b> -create column headings <br>
+        <b>td</b> -table data  <br>
+        
+        <p><b>Example:</b> <br>
+        
+        table <br>
+            tr <br>
+                th Name th/<br>
+                th Surname th/<br>
+            tr/ <br>
+
+            tr <br>
+                td Migael td/ <br>
+                td Smit td/ <br>     
+            tr/ <br>
+
+        table/ 
+        </p>
+    </p> 
+
+        <div id="table" class="example-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                </tr>
+                <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                </tr>
+            </table>
+        </div>
+    
+<hr>
+
+        <h2>CSS on Tables</h2>
+
+        <p>You can style tables with css , things like borders and color</p>
+
+        <div id="table-style" class="example-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                </tr>
+                <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                </tr>
+            </table>
+        </div>
+
+        <p><b>double borders</b>: apply the border to the Table ,header and data. <br> To collapse simply add <b>[border-collapse:collapse]</b> </p>
+        
+        <div id="border-style-collapse" class="example-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                </tr>
+                <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
 </html>
