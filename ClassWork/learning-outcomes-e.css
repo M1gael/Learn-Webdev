@@ -75,3 +75,27 @@ ul{
     border: solid black;
     border-collapse: collapse;
 }
+
+#table-row_column_span th , td{
+    border: solid black;
+    border-collapse: collapse;
+}
+
+#table-caption th , td{
+    border: solid black;
+    border-collapse: collapse;
+}
+
+#table-row-group th ,td{
+    border: solid black;
+    border-collapse: collapse;
+}
+
+#table-row-group thead {
+    color: red;
+    background-color: black;
+}
+
+#col2{
+   background-color: lightgreen;
+}

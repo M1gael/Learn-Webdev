@@ -109,5 +109,119 @@
             </table>
         </div>
 
+
+        <p>Cells can span mutliple rows and columns. <br>
+            <b>Spanning Cells </b> - single cell that occupies more than one cell row and or column. <br>
+            Create by using the <b>rowspan = "2"</b> or <b>colspan="4"</b> <br>
+            <b>[th colspan="2">Name and Surname< /th]</b>
+        </p>
+
+        <div id="table-row_column_span" class="example-container">
+            <table>
+                <tr>
+                    <th colspan="2">Name and Surname</th>
+                </tr>
+                <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Table Captions</h3>
+        <p>Captions can also be added to tables using <b>[caption]</b> right below the <b>[table]</b> <br>
+            table <br>
+                caption Name and Surnames /caption <br>
+            /table
+        </p>
+
+        <div id="table-caption" class="example-container">
+            <table>
+            <caption>Write your caption</caption>
+                <tr>
+                    <th colspan="2">Name and Surname</th>
+                </tr>
+                <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Row Groups</h3>
+
+        <p>Seperate your table into 3 groups namely: <br>
+            <b>thead - Table head</b> <br>
+            <b>tbody - Table body</b> <br>
+            <b>tfoot - Table foot</b> <br>
+
+            &lt;table&gt;<br>
+            &lt;thead&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;th colspan="2"&gt;Name and Surname&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+            &lt;/thead&gt;<br>
+            &lt;tbody&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;Migael&lt;/td&gt;<br>
+                &lt;td&gt;Smit&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+            &lt;/tbody&gt;<br>
+            &lt;/table&gt;<br>
+            <br>
+            Now thead , tbody and tfoot can be styled seprerately as groups .
+        </p>
+
+        <div id="table-row-group" class="example-container">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Migael</td>
+                    <td>Smit</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Column Grops</h3>
+
+        <p>The <b>[colgroup]</b> tag specifies a group of one or more columns in a table for formatting. <br>
+            <b>[span]</b> tag specifies the number of columns the group should span <br>
+            <b>Remeber :</b> You can use <b>[colgroup]</b> with span to do multiple columns <br>
+            or simply <b>[col id="col1"] [col id="col2"] [col id="col3"]</b> to do one at a time and leave the ones empty that you wont be working with
+        
+        </p>
+
+        <div id="table-column-group" class="example-container">
+            <table>
+                <col id="col1">
+                <col id="col2">
+
+                <tr>
+                    <th>Month</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>R1000</td>
+                </tr>
+                <tr>
+                    <td>Feb</td>
+                    <td>R1020</td>
+                </tr>
+                <tr>
+                    <td>Mar</td>
+                    <td>R900</td>
+                </tr>
+                
+            </table>
+        </div>
+
     </body>
 </html>
