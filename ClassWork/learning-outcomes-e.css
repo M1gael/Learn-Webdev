@@ -99,3 +99,16 @@ ul{
 #col2{
    background-color: lightgreen;
 }
+
+#multi-column-layout{
+    margin: 15px 20px;
+
+
+    column-count: 2;
+    column-gap:15px; 
+    column-span: all;
+    column-rule: solid black 5px;
+    column-width: 40%;
+    box-sizing: border-box;
+    
+}
