@@ -40,6 +40,10 @@ ul{
     margin-left: 15px;
 }
 
+label, input {
+    display: block;
+  }  
+
 .objectives h2{
     text-align: center;
     border: solid black 3px;
@@ -63,4 +67,22 @@ ul{
     margin: auto;
     margin-bottom: 10px;
     text-align: center;   
+}
+
+#survey-customerInfo{
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+
+#survey-expInfo{
+    width: 40%;
+    margin: auto;
+    padding: 10px;    
+}
+
+#menu{
+    width: 40%;
+    margin: auto;
+    padding: 10px; 
 }

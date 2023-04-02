@@ -110,7 +110,66 @@
         <h3>The enctype attribute has three possible values</h3>
         <ul> <li><code>application/x-www-form-urlencoded</code>: This is the default value if the <code>enctype</code> attribute is not specified. This is the correct option for the majority of simple HTML forms.</li> <li><code>multipart/form-data</code>: This type allows file input element(s) to upload file data.</li> <li><code>text/plain</code>: This type is used for debugging purposes.</li> </ul>
 
+    <hr>
 
+        <h2>Example of Forms , Fieldsets , Legends , Labels </h2>
+
+        <form action="Location of server">
+            <fieldset id="survey-customerInfo">
+                <legend>Customer Information</legend>
+
+                    <label for="customer-name">Name</label>                                 <!--Pay attention that "for=name" associates with id="name"-->
+                    <input id="customer-name" name="custName" type="text" value="Michael">
+                    <br>                                                                    <!--value sets the default value of the input-->
+                    <label for="customer-street">Street</label>
+                    <input id="customer-street" name="custStreet" type="text" placeholder="Enter your street name">
+                    <br>                                                                    <!--placeholder is to help give a hint text-->        
+                    <label for="customer-city">City</label>
+                    <input id="customer-city" name="custCity" type="text" value="Thabazimbi">
+                    <br>
+                    <label for="customer-state">State</label>
+                    <input id="customer-state" name="custState" type="text" value="Limpopo">
+                    <br>
+                    <label for="customer-zip">Zip</label>
+                    <input id="customer-zip" name="custZip" type="text" value="0387">
+                    
+            </fieldset>
+
+            <fieldset id="survey-expInfo">
+                <legend>Share your experience at this resturant:</legend> 
+                <div class="formRow">
+                    <label for="visit">Date of Visit</label>
+                    <input id="visit" type="date" name="visitDate" >
+                </div>
+
+                <div class="formRow">
+                    <label for="order">Order</label>
+                    <select size="1" name="orderType" id="order" multiple>                          <!--The size attribute states how many value to be displayed at once-->
+                        <option value="option1">Takeout</option>                                    <!--The Multiple attribute allows more than one item to be selected -->
+                        <option value="option2">Delivery</option>
+                        <option value="option3">Dine in</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="menu">
+                <div>
+                    <h3>Menu</h3>
+                    <label for="select-food">Choose an item</label>
+                    <select name="menu" id="select-food">
+                        <optgroup label="Salads">                                                   <!--optgroup helps group , label attribute is needed-->
+                            <option value="greekSalad">greek</option>
+                            <option value="japaneseSalad">japanese</option>
+                        </optgroup>
+                        <optgroup label="Pizza">
+                            <option value="margarita">Margarita</option>
+                            <option value="trippleCheese">Tripple Cheese</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+
+        </form>
 
 </body>
 
