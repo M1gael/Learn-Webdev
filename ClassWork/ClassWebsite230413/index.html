@@ -12,27 +12,35 @@
 <body>
 
     <div id="background-container">
-
     </div>
+  
+    <form id="form-container" action="Location of server">
 
-    <div id="input-container">
+        <div id="icon" class="fa fa-user-circle-o fa-4x"></div>
         
-        <form id="form-container" action="Location of server">                           
-            <div id="icon"></div>
-            <h1 id="caption-login">Login</h1>
-            <input id="user-name" type="text" placeholder="Enter Username">
-            <input id="user-password" type="password" placeholder="Enter Password">
-            <label  for="user-remember">Remember me </label><input id="user-remember" type="checkbox">
+        <h1 id="caption-login">Log in</h1>
+        
+        <div style="position: relative;">
+            <i class="fa fa-user icon" style="position: absolute; left: 10px; top: 10px; padding: 10px;"></i>
+            <input  id="user-name" type="text" placeholder="Enter Username">
+        </div>
+        
+        <div style="position: relative;">
+            <input  id="user-password" type="password" placeholder="Enter Password" >
+            <i class="fa fa-lock icon" style="position: absolute; left: 10px; top: 10px; padding: 10px;"></i>
+        </div>
             
-            <br>
+        <label  for="user-remember">Remember me </label><input id="user-remember" type="checkbox">
+        
+        <br>
 
-            <button id="button-login" href="#">Log in</button>
-            
-            <a id="button-forgotPass" href="#">Forgot Password</a>
-        </form>  
-    
+        <button id="button-login" href="#">Log in</button>
+        
+        <a id="button-forgotPass" href="#">Forgot Password</a>
+    </form>  
 
-    </div>
+
+  
     
 
 </body>
