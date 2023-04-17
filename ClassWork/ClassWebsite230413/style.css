@@ -34,7 +34,7 @@ body , html{
     transform: translate(-50% ,-50%);
     text-align: center;
 
-    background-image: linear-gradient(to bottom , rgb(96, 24, 96) , rgb(213, 23, 213));
+    background-image: linear-gradient(to bottom , rgb(0, 0, 178) , rgb(169, 0, 169));
     color: beige;
 
 }
