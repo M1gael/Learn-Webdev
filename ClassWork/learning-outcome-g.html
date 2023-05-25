@@ -59,5 +59,30 @@
         [/audio]                             <!--can also use it like : <audio src=""></audio>-->
     </p>
     <p><b>Note</b> [url1] , [url2] represent the destination files and [mime-type] the type of audio format</p>
+    <br>
+    
+    <div class="example-container">
+        <audio controls>                       <!--displays the controls for the audio player-->
+            <source src="../audio-lib/Lipps Inc - Funkytown(1).mp3" type="audio/mp3">
+            <p><em>To play this uadio clip your browser needs to support mp3 files.</em></p>                                    <!--Fallback message incase of unsupported browser-->
+        </audio>
+    </div>
+
+<hr>
+
+    <h2>Media Player Styling</h2>
+
+    <p>
+        Media player appearence is determined by the browser itself . <br>
+        CSS can be applied for width , borders ,drop shadows as well as filters and transformations.
+    </p>
+
+    <div class="example-container">
+        <audio controls id="audio-style">                       <!--displays the controls for the audio player-->
+            <source src="../audio-lib/Lipps Inc - Funkytown(1).mp3" type="audio/mp3">
+            <p><em>To play this uadio clip your browser needs to support mp3 files.</em></p>                        <!--Fallback message incase of unsupported browser-->
+        </audio>    
+    </div>
+
 </body>
 </html>
