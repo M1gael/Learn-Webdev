@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Outcome G</title>
+    <link rel="stylesheet" href="learning-out-comes-universal.css">
+    <link rel="stylesheet" href="learning-outcome-g.css">
+
+</head>
+<body>
+
+    <h1>Learning Outcomes G</h1>
+
+    <div class="objectives">
+    <h2>Objectives:</h2>    
+    <ol>
+        <li>Insert Html Audio Clip</li>
+        <li>Supporting Multiple Audio Formats</li>
+        <li>Insert Video Clip</li>
+        <li>Video Captions</li>
+        <li>Format Video Captions</li>
+        <li>CSS Transitions</li>
+        <li>Tranistion Attributes</li>
+        <li>CSS Key Frame Animation</li>
+        <li>Applying a CSS Animation </li>
+    </ol>
+    </div>
+
+<hr>
+    <h2>Audio Element</h2>   
+    <p>Audio clips are embedded within a web page using the <b>audio</b> element</p>
+    <p><b>audio src="url" attributes</b></p>
+    <p>Where <b>url</b> specifies the source and <b>attrubutes define how the audio should be handled by the browser</b></p>
+
+    <h3>Attributes of Audio and Video Elements</h3>
+    <p>
+        <b>autoplay</b> Starts playing media as soon as it is loaded <br>
+        <b>controls</b> Displays the player controls in the web page <br>
+        <b>loop</b> Automatically restarts media after it has finished playing <br>
+        <b>muted</b> Specifies that the audio output should be muted <br>
+        <b>preload="auto/metadata/none"</b> to preload : media , to load entire clip : metadata , or to not preload entire clip : none <br>
+    </p>
+
+    <p> <b>Audio Formats</b> <br>
+        MP3 , MP3 , (.mp3) , audio/mpeg <br>
+        AAC , AAC , (.aac .mp4 .m4a) , audio/mp4 <br>
+        OGG , Vorbis , (.ogg) , adio/ogg <br>
+        WAV , PCM  , (.wav) , audio/wav
+    </p>
+
+    <p>
+        Nest several <b>source</b> elements within a single audio element to provide several versions of the same media file <br>
+        <br>
+        [audio] <br> 
+            [source src="url1" type ="mime-type"] (source is self closing)<br>
+            [source src="url1" type ="mime-type"] <br>
+        [/audio]                             <!--can also use it like : <audio src=""></audio>-->
+    </p>
+    <p><b>Note</b> [url1] , [url2] represent the destination files and [mime-type] the type of audio format</p>
+</body>
+</html>
