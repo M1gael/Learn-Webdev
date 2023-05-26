@@ -131,5 +131,37 @@
         </video>
     </div>
 
+<hr>
+
+    <h2>More About Video Players</h2>
+
+    <h3>Preview Images with [poster]</h3>
+    <p><b>poster</b> attribute defines a video's preview image</p>
+    <p><b>[video poster = "url"] <br>
+        [...] <br>
+        [/video] <br>
+    </b></p>
+
+    <div class="example-container">                                 <!--poster is used to load preview images-->
+        <video src="../video-lib/y2mate.com - Sugababes Push The Button Official Music Video_480p.mp4" controls poster="../image-lib/drunkrick.jpg"></video>
+    </div>
+
+    <h3>Adding a Text Track to Video</h3>
+    <p><b>[track kind ="kind" src ="src" label="text" srclang="lang"]</b></p>
+    <p><b>kind</b> defines the track type.  [kind values : captions(Brief text) , chapters(Used by mediaplayer to navigate to specific time points) , descriptions(Longer descriptions synced to specified time points) , subtitles(the default , translation of dialog from media clip) , metadata(Metadata content used by external scripts accessing the media file)]<br>
+        <b>src</b> references the file containing the track. <br>
+        <b>label</b> gives the track name. <br>
+        <b>srclang</b> indicates the language of the track.
+    </p>
+
+    <h3>Making Tracks with WebVTT</h3>
+    <p>Tracks are stored as simple text files written in <b>WebVTT</b> language. <br>
+        <b> [FORMAT]
+            WEBVVT <br> 
+            cue1 <br>
+        </b>
+        Where <b>cue1 , cue2</b> are cues matched with specific time intervals within a media clip
+    </p>
+
 </body>
 </html>
