@@ -4,27 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Outcomes H</title>
     <link rel="stylesheet" href="learning-out-comes-universal.css">
+    <link rel="stylesheet" href="learning-outcomes-h.css">
+    <script src="learning-outcomes-h.js"></script>
 </head>
 <body>
     
     <h1>Learning Outcomes H</h1>
 
-    <h2 class="objectives">Objectives</h2>
-    <ol>
-        <li>Inser a script element</li>
-        <li>Write JavaScript Comments</li>
-        <li>Display an alert diaglogue box</li>
-        <li>Use browser debugging tools</li>
-        <li>Reference browser and page objects</li>
-        <li>Use JavaScript properties and methods</li>
-        <li>Write HTML code and text content into a page</li>
-        <li>Work with a Date object</li>
-        <li>Use JavaScript operators</li>
-        <li>Create a JavaScript functions</li>
-        <li>Create timed commands</li>
-    </ol>
+    <div class="objectives">
+        <h2>Objectives:</h2>    
+        <ol>
+            <li>Inser a script element</li>
+            <li>Write JavaScript Comments</li>
+            <li>Display an alert diaglogue box</li>
+            <li>Use browser debugging tools</li>
+            <li>Reference browser and page objects</li>
+            <li>Use JavaScript properties and methods</li>
+            <li>Write HTML code and text content into a page</li>
+            <li>Work with a Date object</li>
+            <li>Use JavaScript operators</li>
+            <li>Create a JavaScript functions</li>
+            <li>Create timed commands</li>
+        </ol>
+    </div>
 
+<hr>
+
+    <h2>Serverside and Clientside Programming</h2>
+
+    <h3>Server-side programming:</h3>
+
+    <p>The program code runs from the server hosting the website <br>
+        <h4>Advantage</h4>
+            <p>Connect to a server from an online database containing info not directly accessible to end users</p>
+        <h4>Disadvantages</h4>
+            <p>Use server resources and require internet access <br>
+                Long delays in cases of load
+            </p>
+    </p>
+
+    <h3>Client-Side Programming</h3>
+
+    <p>
+        The program code runs on the user's computer using downloaded scripts with html and CSS files. <br>
+        The load gets distributed avoiding program-related requests
+        Client-side programs can never replace server-side programming.
+    </p>
+
+
+<hr>
+
+
+    <h2>Starting with JavaScript</h2>
+
+    <p>
+        Code is attached to an html file using the <b>[script]</b> element <br>
+        <b>[script src ="url"][/script]</b>
+    </p>
+    <p>
+        An <b>embedded script</b> can be used instead of an external file <br>
+        <b>
+            [script] <br>
+            code <br>
+            [/script]
+        </b>
+    </p>
+
+    <p>
+        Script elements can be placed anywhere in an HTML document. <br>
+        When encountered the browser halts loading and starts proccessing the script. <br>
+        <b>[async]</b> and <b>[defer]</b> are attributes that can be added to <b>[script]</b> to alter the sequence of proccessing. <br>
+        <br>
+        <b>async</b>: Parse the HTML and JavaScript code together. <br>
+        <b>defer</b>: defers script processing until after the page has been completely parsed and loaded. <br>
+
+        <b>NOTE:</b> These attributes are ignored for embedded scripts.
+    </p>
+
+
+<hr>
+
+
+    <h2>Creating a JavaScript Program</h2>
+
+    <p>
+        Display a dialog box:
+        <b>[window.alert("Hello World")]</b>
+    </p>
+
+    <p>
+        Display an alert by creating a function in JS <br>
+        <b>
+            [function showAlert(){] <br>
+            [window.alert("welcome to JavaScript");] <br>
+            [}]
+        </b>
+    </p>
+
+
+    <p>
+        And then call that function in HTML with an onclick event <br>
+        <b>
+            [button onclick="showAlert()"]{ <br>
+            [Show Message] <br>
+            [/button}]
+        </b>
+    </p>
+
+    <button onclick="showAlert()">
+        Show Message
+    </button>
+
+<hr>
+
+    <h2>Debugging</h2>
+
+    <h3>Common Errors</h3>
+
+    <p>
+        <b> Load-time errors </b> occur when a script is first
+        loaded by a browser <br>
+        <b> Run-time errors </b> occur during execution of a
+        script without syntax errors <br>
+        <b> Logical errors </b> are free from syntax and
+        executable mistakes but result in an incorrect
+        output
+    </p>
+   
+    <h3>Debugging Tools</h3>
+
+    <p>F12 is the browser shortcut to open a debugger</p>
+
+    <p>
+        Inserting breakpoints is a usefull technique to locate the source of an error. <br>
+        <b>Breakpoints</b> are locations where a browser pauses a program to determine whether an error has occurred at that point during execution . <br>
+        Insert a breakpoint using a simple window.alert("") function.
+    </p>
+
+
+<hr>
+
+
+    <h2>Applying Strict Usage of JavaScript</h2>
+
+    <p><b>strict mode</b> enables all lapses in syntax to result in load-time or run-time errors. <br>
+    To run in strict mode , add the <b>["use strict";]</b> statement to the first line of the file;
+    </p>
+
+
+<hr>
+
+
+    <h2>Objects</h2>
+
+    <p>
+        <b> Object</b>: Entity within a browser or webpage that has properties and methods. <br>
+        <b> Properties</b>: Define objects. <br>
+        <b>Methods</b>: Act upon objects . <br>
+        Java is an object-based language that manipulates and object by changing one or more of its properties.
+    </p>
+
+    <h3>Types of JS Objects</h3>
+
+    <p>
+        <b>Built-in</b> intrisic to JS language <br>
+        <b>Browser</b> part of browser<br>
+        <b>Document</b> part of web documents<br>
+        <b>Customised</b> creatred by a programmer to use in an application 
+    </p>
+
+    <p>
+        <b>Browser object model (BOM)</b> and <b>Document object model(DOM)</b> organize browser and document objects in hierachical structures , respectively.
+    </p>
+
+    <h3>Object hierachy</h3>
+    
+    <div id="objectHierarchy-container">
+    </div>
+
+    <p>
+        Objects within the Obj hierarchy are referenced by their obj names such as <b> window , document</b> or <b> navigator</b>. <br>
+        Objects can be referenced using the notation <b>[object1. object2.object3...]</b> where <b>object1</b> is at the top of the hierarchy , <b>object2</b> is a child of <b>object1</b> , and so on. 
+    </p>
+
+
+<hr>
+
+
+    <h2>Referencing an Object by ID and Name</h2>
+
+    <p>
+        An efficient approach to reference an element is to use its id attribute using the expression: <br>
+        <b>[document.getElementById(id)]</b> <br>
+        where <b>id</b> is the value of the id ,id="example-container"
+    </p>
+
+
+<hr>
+
+
+    <h2>Changing Properties and Applying Methods</h2>
+
+    <h3>Object Properties</h3>    <p>
+        Object properties is accessed using <b>[object.property]</b> <br>
+        <b>Read-only</b> properties cannot be modified.
+    </p>
+
+    <h3>Applying a Method</h3><p>
+        Objects can be modified using methods. <br>
+        Methods are applied using the expression : <b>[object.method(values)]</b> where <b>object</b> is a reference to an object , <b>method</b> is the name of the method applied to the object , and <b>value</b> is a comma-seperated list of values is associated with the method.
+    </p>
+
+
+<hr>
+
+
+    <h2>Writing HTML code</h2>
+
+    <p>
+        HTML code stored within a page element is referenced using: <br>
+        <b>[element.innerHTML]</b> Where <b>element</b> is an obj reference to and element within a web document. <br>
+        <br>
+        <h3>Example:</h3>
+
+        <p>
+            document.getElementById("dateNow").innerHTML="m/d/y h:m:s"  <!--breakline can be added to seperate propperly-->
+        </p>
+    </p>
 </body>
 </html>

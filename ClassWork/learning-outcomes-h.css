@@ -1,0 +1,18 @@
+button{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+
+#objectHierarchy-container{
+    width: 40%;
+    height: 290Px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center; 
+
+    background-image: url(../image-lib/learning-outcomes-h.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
