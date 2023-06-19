@@ -23,22 +23,47 @@
 <hr>
 
   <h2>Editing HTML Content using JavaScript</h2>
+ 
   <p>
     One of many JS Methods is <b>getElementByID()</b> <br>
     The example below finds an HTML element with id = "demo" and changes the element content (innerHTML) to "Hello JavaScript. <br>
     <b>CODE:[document.getElementById("demo").innerHTML = "Hello JavaScript"; ]</b>
   </p>
 
+<hr>
+
   <div>
     <p id="demo">JavaScript can Change HTML Content</p>                             <!--JS accepts both single and double quotes-->
     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
   </div>
 
+<hr>
+
   <div>
-    <button type="button" onclick="document.getElementById('myImage').src='/home/mig/WebDev/image_lib/pic_bulbon.gif'" >Turn on the light</button>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'" >Turn on the light</button>
     <img id="myImage" src="../../image_lib/pic_bulboff.gif" alt="Img not displayed">
-    <button type="button" onclick="document.getElementById('myImage').src='/home/mig/WebDev/image_lib/pic_bulboff.gif'" >Turn off the light</button>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'" >Turn off the light</button>
   </div>
+
+<hr>
+
+  <h2>Change Style</h2>
+  <p><b>[document.getElementById("demo").style.fontSize = "35px"; ]</b></p>
+
+  <button type="button" onclick="document.getElementById('demoStyle').style.fontSize='35px'" >Large</button>
+  <button type="button" onclick="document.getElementById('demoStyle').style.fontSize='12px'" >Small</button>
+  <p id="demoStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero rem est voluptatem facere repudiandae sit! Excepturi iste, tempore nisi ut, accusamus illo sequi eaque quod dolore dolorem quis voluptatum!</p>
+  
+<hr>
+
+  <h2>Hide Elements</h2>
+  <p><b>Hiding HTML elements can be done by changing the display style:</b></p>
+
+  <p id="demoDisplay">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eos voluptatem magnam deleniti quia quis dolorem odio sunt, eius aliquam quasi laudantium inventore culpa illum vero nisi eaque quaerat. Assumenda.</p>
+
+  <button type="button" onclick="document.getElementById('demoDisplay').style.display='none'" >Hide</button>
+  <button type="button" onclick="document.getElementById('demoDisplay').style.display='block'" >Show</button>
+
 
 
 </body>
