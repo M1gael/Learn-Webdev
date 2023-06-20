@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+    <link rel="stylesheet" href="../../ClassWork/learning-out-comes-universal.css">
+</head>
+<body>
+
+    <h1>JavaScript Part 2</h1>
+
+<hr>
+
+    <h2> The [script] Tag </h2>
+
+    <p>In HTML, JavaScript code is inserted between <b>[script][/script]</b> tags.</p>
+
+    <p><b>
+        [script] <br>
+            function myFunction()<br>
+            {<br>
+            document.getElementById("demo").innerHTML = "My First JavaScript"; <br>
+            }   <br>
+            [/script] 
+    </b></p>
+
+    <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam alias laboriosam minus accusantium similique facilis unde nobis beatae, recusandae libero. Recusandae soluta quia tempore labore porro aliquam eum nihil asperiores?</p>
+
+    <script>                                                                                                                               
+        function myFunction(){                                                             //JS function in HTML
+            document.getElementById('demo').innerHTML="Paragraph Changed";
+        }
+    </script>
+                    
+    <script>                                                                                                                               
+        function undoMyFunction(){                                                             //JS function in HTML
+            document.getElementById('demo').innerHTML="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos reiciendis, distinctio deleniti tempore sapiente veniam molestias recusandae pariatur maxime alias iusto, ipsum itaque quis accusamus culpa voluptatem quasi earum quisquam!";
+        }
+    </script>
+                                                                                <!--Function Called with onclick-->
+    <button type="button" onclick="myFunction()">My JavaScript</button>
+    <button type="button" onclick="undoMyFunction()">Undo -My JavaScript</button>
+
+<hr>
+
+    <h2>From here on External JS will be used</h2>
+    <p>To link and external JS file <br>
+        <b>[script src="myScript2.js"][/script]</b>
+    </p>
+
+<hr>
+
+</body>
+</html>
