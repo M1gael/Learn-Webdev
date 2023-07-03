@@ -42,7 +42,7 @@
 
     <p>In a programming language, variables are used to store data values.
 
-        JavaScript uses the keywords var, let and const to declare variables.
+        JavaScript uses the keywords <b>var, let and const</b> to declare variables.
         
         An equal sign is used to assign values to variables.
         
@@ -52,6 +52,109 @@
         [let x;]<br>
         [x = 6;] 
     </b>
+    </p>
+
+
+    <h3>JavScript Operators</h3>
+
+    <p>JavaScript uses arithmic operators <b>(+ - * /)</b> to compute values</p>
+    <p><b>(5+6)*10</b></p>
+
+
+    <h3>JavaScript Keywords</h3>
+
+    <p>The <b>let</b> keyword tells the browser to create variables <br>
+    <b>
+        let x, y; <br>
+        x = 5 + 6; <br>
+        y = x * 10;
+    </b>
+    </p>
+
+    <p>The <b>var</b> keyword also tells the browser to create variables: <br>
+    <b>
+        var x, y; <br>
+        x = 5 + 6; <br>
+        y = x * 10;
+    </b>
+    </p>
+
+    <p class="note">
+
+        In these examples, using var or let will produce the same result.
+        
+        You will learn more about var and let later in this tutorial.
+    </p>
+
+
+    <h3>JavaScript Identifiers / Names</h3>
+
+    <p>
+        Identifiers are JavaScript names. <br>
+        Identifiers are used to name variables and keywords, and functions. <br>
+        The rules for legal names are the same in most programming languages. <br> <br>
+        A JavaScript name must begin with: <br>
+        <ul>
+            <li>A letter (A-Z or a-z)</li>
+            <li>A dollar sign ($)</li>
+            <li>Or an underscore (_)</li>
+        </ul> <br>
+        Subsequent characters may be letters, digits, underscores, or dollar signs.
+    </p>
+    <p class="note">Numbers are not allowed as the first character in names. <br>
+        This way JavaScript can easily distinguish identifiers from numbers.
+    </p>
+
+
+    <h3>JavaScript is Case Sensitive</h3>
+
+    <p>
+        All JavaScript identifiers are case sensitive. <br><br>
+
+        The variables lastName and lastname, are two different variables:  
+        <br><br>
+        <b>
+            let lastname, lastName; <br>
+            lastName = "Doe"; <br>
+            lastname = "Peterson";
+        </b>
+        <br> JavaScript does not interpret LET or Let as the keyword let.
+    </p>
+
+
+    <h3>JavaScript and Camel Case</h3>
+
+    <p>Historically, programmers have used different ways of joining multiple words into one variable name:</p>
+    
+    <p>
+        <b>Underscore:</b> <br>
+
+        first_name, last_name, master_card, inter_city.
+    </p>
+
+    <p>
+        <b>Upper Camel Case (Pascal Case):</b> <br>
+
+        FirstName, LastName, MasterCard, InterCity.
+    </p>
+
+    <p>
+        <b>Lower Camel Case:</b> <br>
+
+        JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+        firstName, lastName, masterCard, interCity.
+    </p>
+
+
+    <h3>JavaScript Character Set</h3>
+
+    <p>
+        JavaScript uses the <b>Unicode</b> character set.
+        <br>
+        Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+        <br>
+        For a closer look, please study our Complete Unicode Reference.
     </p>
 </body>
 </html>
