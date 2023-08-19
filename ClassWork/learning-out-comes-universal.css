@@ -15,7 +15,7 @@ h1{
 
 h2{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -68,6 +68,11 @@ ul{
     margin: auto;
     margin-bottom: 10px;
     text-align: center;   
+}
+
+.table-clean{
+    text-align: center;
+    margin: auto;
 }
 
 .note{
