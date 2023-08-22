@@ -169,5 +169,256 @@
         </tbody>
     </table>
 
+
+    <h2>Shift Assignment Operators</h2>
+    <table class="table-clean" border="1">
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;&lt;=</code></td>
+                <td><code>x &lt;&lt;= y</code></td>
+                <td><code>x = x &lt;&lt; y</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;&gt;=</code></td>
+                <td><code>x &gt;&gt;= y</code></td>
+                <td><code>x = x &gt;&gt; y</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;&gt;&gt;=</code></td>
+                <td><code>x &gt;&gt;&gt;= y</code></td>
+                <td><code>x = x &gt;&gt;&gt; y</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Logical Assignment Operators</h2>
+    <table class="table-clean" border="1">
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&amp;=</code></td>
+                <td><code>x &amp;= y</code></td>
+                <td><code>x = x &amp; y</code></td>
+            </tr>
+            <tr>
+                <td><code>^=</code></td>
+                <td><code>x ^= y</code></td>
+                <td><code>x = x ^ y</code></td>
+            </tr>
+            <tr>
+                <td><code>|=</code></td>
+                <td><code>x |= y</code></td>
+                <td><code>x = x | y</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>JavaScript String Comparison</h2>
+    <pre>
+        <code>
+        let text1 = "A";
+        let text2 = "B";
+        let result = text1 &lt; text2;
+        </code>
+    </pre>
+    <p>result = true </p>
+    <p class="note">Strings are compared alphabetically</p>
+
+
+    <h2>JavaScript String Addition</h2>
+    <p>The + can also be used to add (concatenate) strings:</p>
+    <pre>
+        <code>
+        let text1 = "John";
+        let text2 = "Doe";
+        let text3 = text1 + " " + text2;
+        </code>
+    </pre>
+
+    <h3>The += assignment operator can also be used to add (concatenate) strings:</h3>
+    <pre>
+        <code>
+        let text1 = "What a very ";
+        text1 += "nice day";
+        </code>
+    </pre>
+    <p>output "What a very nice day"</p>
+    <p class="note">When used on strings, the + operator is called the concatenation operator.</p>
+
+
+    <h2>Adding Strings and Numbers</h2>
+    <p>Adding two numbers, will return the sum, but adding a number and a string will return a string:</p>
+    <pre>
+        <code>
+        let x = 5 + 5;
+        let y = "5" + 5;
+        let z = "Hello" + 5;
+        </code>
+    </pre>
+        
+        <p>The result of <code>x</code>: 10</p>
+        <p>The result of <code>y</code>: 55</p>
+        <p>The result of <code>z</code>: Hello5</p>
+    <p class="note">If you add a number and a string, the result will be a string!</p>
+
+    <h2>JavaScript Bitwise Operators</h2>
+    <table class="table-clean" border="1">
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Same as</th>
+                <th>Result</th>
+                <th>Decimal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&</code></td>
+                <td>AND</td>
+                <td><code>5 & 1</code></td>
+                <td><code>0101 & 0001</code></td>
+                <td><code>0001</code></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><code>|</code></td>
+                <td>OR</td>
+                <td><code>5 | 1</code></td>
+                <td><code>0101 | 0001</code></td>
+                <td><code>0101</code></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><code>~</code></td>
+                <td>NOT</td>
+                <td><code>~5</code></td>
+                <td><code>~0101</code></td>
+                <td><code>1010</code></td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><code>^</code></td>
+                <td>XOR</td>
+                <td><code>5 ^ 1</code></td>
+                <td><code>0101 ^ 0001</code></td>
+                <td><code>0100</code></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><code>&lt;&lt;</code></td>
+                <td>left shift</td>
+                <td><code>5 &lt;&lt; 1</code></td>
+                <td><code>0101 &lt;&lt; 1</code></td>
+                <td><code>1010</code></td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><code>&gt;&gt;</code></td>
+                <td>right shift</td>
+                <td><code>5 &gt;&gt; 1</code></td>
+                <td><code>0101 &gt;&gt; 1</code></td>
+                <td><code>0010</code></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><code>&gt;&gt;&gt;</code></td>
+                <td>unsigned right shift</td>
+                <td><code>5 &gt;&gt;&gt; 1</code></td>
+                <td><code>0101 &gt;&gt;&gt; 1</code></td>
+                <td><code>0010</code></td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="note">The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.
+        Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.
+        ~00000000000000000000000000000101 will return 11111111111111111111111111111010</p>
+
+    
+    <h3>Bitwise Assignment Operators</h3>
+    <table class="table-clean" border="1">
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&amp;=</code></td>
+                <td><code>x &amp;= y</code></td>
+                <td><code>x = x &amp; y</code></td>
+            </tr>
+            <tr>
+                <td><code>^=</code></td>
+                <td><code>x ^= y</code></td>
+                <td><code>x = x ^ y</code></td>
+            </tr>
+            <tr>
+                <td><code>|=</code></td>
+                <td><code>x |= y</code></td>
+                <td><code>x = x | y</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>JavaScript Arithmetic</h2>
+    <p class="note">basics will be ignored but JS unique characteristics in Arithmic will be pointed out</p>
+    
+
+    <h3>Exponentiation</h3>
+    <p>The exponentiation operator <b>(**)</b> raises the first operand to the power of the second operand.</p>
+    <pre>
+        <code>
+        let x = 5;
+        let z = x ** 2;
+        </code>
+    </pre>   
+
+    <p><b>x ** y</b> produces the same result as <b>Math.pow(x,y)</b>:</p>
+    <pre>
+        <code>
+        let x = 5;
+        let z = Math.pow(x, 2);
+        </code>
+    </pre>
+
+
+    <h3>Operator Precedence</h3>
+    <p>Operator precedence describes the order in which operations are performed in an arithmetic expression.</p>
+    <pre>
+    <code>
+    let x = 100 + 50 * 3;
+    </code>
+    </pre>
+
+    <p>Is the result of the example above the same as <code>150 * 3</code>, or is it the same as <code>100 + 150</code>?</p>
+
+    <p>Is the addition or the multiplication done first?</p>
+
+    <p>As in traditional school mathematics, the multiplication is done first.</p>
+
+    <p><strong>Multiplication (*)</strong> and <strong>division (/)</strong> have higher precedence than <strong>addition (+)</strong> and <strong>subtraction (-)</strong>.</p>
+
+    <p>And (as in school mathematics) the precedence can be changed by using <strong>parentheses</strong>.</p>
+
 </body>
 </html>
