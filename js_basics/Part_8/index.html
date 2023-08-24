@@ -10,7 +10,154 @@
 
     <h1>Part 8: Objects</h1>
 
-    <!-- Your content goes here -->
+<hr>
+
+    <h2>Real Life Objects, Properties, and Methods</h2>
+    <p><strong>In real life, a car is an object.</strong></p>
+
+    <p><em>A car has properties like weight and color, and methods like start and stop:</em></p>
+    <table>
+        <tr>
+            <th>Properties</th>
+            <th>Methods</th>
+        </tr>
+        <tr>
+            <td>car.name = Fiat</td>
+            <td>car.start()</td>
+        </tr>
+        <tr>
+            <td>car.model = 500</td>
+            <td>car.drive()</td>
+        </tr>
+        <tr>
+            <td>car.weight = 850kg</td>
+            <td>car.brake()</td>
+        </tr>
+        <tr>
+            <td>car.color = white</td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <p><strong>All cars have the same properties, but the property values differ from car to car.</strong></p>
+
+    <p><strong>All cars have the same methods, but the methods are performed at different times.</strong></p>
+    <p class="note">It is a common practice to declare objects with the const keyword.</p> 
+    
+
+    <h2>Accessing Object Properties</h2>
+    <p><strong>Accessing Object Properties:</strong></p>
+
+    <p>You can access object properties using either:</p>
+
+    <ul>
+        <li><code>objectName.propertyName</code></li>
+        <li><code>objectName["propertyName"]</code></li>
+    </ul>
+
+
+    <h2>Object Methods</h2>
+
+    <p><em>Objects can also have methods.</em></p>
+
+    <p><em>Methods are actions that can be performed on objects.</em></p>
+
+    <p><em>Methods are stored in properties as function definitions.</em></p>
+
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Property Value</th>
+        </tr>
+        <tr>
+            <td>firstName</td>
+            <td>John</td>
+        </tr>
+        <tr>
+            <td>lastName</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>eyeColor</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>fullName</td>
+            <td>function() {return this.firstName + " " + this.lastName;}</td>
+        </tr>
+    </table>
+
+    <p class="note">A method is a function stored as a property.</p>       
+    <pre>
+        <code>
+        const person = {
+          firstName: "John",
+          lastName : "Doe",
+          id       : 5566,
+          fullName : function() {
+            return this.firstName + " " + this.lastName;
+          }
+        };
+        </code>
+    </pre>
+    <p><strong>In the example above, <code>this</code> refers to the person object.</strong></p>
+
+    <p><em>I.E. <code>this.firstName</code> means the <code>firstName</code> property of <code>this</code>.</em></p>
+    
+    <p><em>I.E. <code>this.firstName</code> means the <code>firstName</code> property of <code>person</code>.</em></p>
+    
+
+    <h2>What is <b>this?</b></h2>
+    <p><strong>In JavaScript, the <code>this</code> keyword refers to an object.</strong></p>
+
+    <p><em>Which object depends on how <code>this</code> is being invoked (used or called).</em></p>
+    
+    <p><em>The <code>this</code> keyword refers to different objects depending on how it is used:</em></p>
+    
+    <ul>
+        <li><em>In an object method, <code>this</code> refers to the object.</em></li>
+        <li><em>Alone, <code>this</code> refers to the global object.</em></li>
+        <li><em>In a function, <code>this</code> refers to the global object.</em></li>
+        <li><em>In a function, in strict mode, <code>this</code> is undefined.</em></li>
+        <li><em>In an event, <code>this</code> refers to the element that received the event.</em></li>
+        <li><em>Methods like <code>call()</code>, <code>apply()</code>, and <code>bind()</code> can refer <code>this</code> to any object.</em></li>
+    </ul>
+
+    <h3>The this Keyword</h3>
+    <p><strong>In a function definition, <code>this</code> refers to the "owner" of the function.</strong></p>
+
+    <p><em>In the example above, <code>this</code> is the person object that "owns" the <code>fullName</code> function.</em></p>
+
+    <p><em>In other words, <code><b>this.firstName</b></code> means the <code>firstName</code> property of this object.</em></p>
+
+    <p class="note"><b>this</b> is not a variable. It is a keyword. You cannot change the value of <b>this</b>. </p>
+
+
+    <h2>Accessing Object Methods</h2>
+    <p>You access an object method with the following syntax:</p>
+    <p>You can invoke an object method using the syntax:</p>
+
+    <pre><code>objectName.methodName()</code></pre>
+
+    <p>For example:</p>
+
+    <pre><code>name = person.fullName();</code></pre>
+
+
+    <div class="warning"><h2>Do Not Declare Strings, Numbers, and Booleans as Objects!</h2>
+        <p>When a JavaScript variable is declared with the keyword "new", the variable is created as an object: </p>
+        <p><strong>Creating Objects Using Constructors:</strong></p>
+    
+        <pre><code>x = new String();        // Declares x as a String object
+        y = new Number();        // Declares y as a Number object
+        z = new Boolean();       // Declares z as a Boolean object</code></pre>
+    
+        <p>Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.</p>
+    </div>
 
 </body>
 </html>
