@@ -58,5 +58,113 @@
         const date = new Date("2022-03-25");
         </code>
     </pre>
+    <p class="note">A JavaScript variable can hold any type of data.</p>
+    <p class="note">When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+    <h2>Remember :JavaScript Types are Dynamic</h2>
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+    <pre>
+        <code>
+        let x;       // Now x is undefined
+        x = 5;       // Now x is a Number
+        x = "John";  // Now x is a String
+        </code>
+    </pre>
+
+
+    <h2>Exponential Notation</h2>
+    <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+    <pre>
+        <code>
+        let y = 123e5;    // 12300000
+        let z = 123e-5;   // 0.00123
+        </code>
+    </pre>
+    <div class="note">
+        <p>Most programming languages have many number types:</p>
+
+        <ul>
+            <li>Whole numbers (integers):</li>
+            <ul>
+                <li>byte (8-bit)</li>
+                <li>short (16-bit)</li>
+                <li>int (32-bit)</li>
+                <li>long (64-bit)</li>
+            </ul>
+            <li>Real numbers (floating-point):</li>
+            <ul>
+                <li>float (32-bit)</li>
+                <li>double (64-bit)</li>
+            </ul>
+        </ul>
+
+        <p>Javascript numbers are always one type:</p>
+        <blockquote>double (64-bit floating point).</blockquote>
+    </div>
+
+
+    <h2>JavaScript BigInt</h2>
+    <p>All JavaScript numbers are stored in a a 64-bit floating-point format.</p>
+    <pre>
+        <code>
+        let x = BigInt("123456789012345678901234567890");
+        </code>
+    </pre>
+
+
+    <h2>JavaScript Booleans</h2>
+    <p>Booleans can only have two values: true or false.</p>
+    <pre>
+        <code>
+        let x = 5;
+        let y = 5;
+        let z = 6;
+        (x == y)       // Returns true
+        (x == z)       // Returns false
+        </code>
+    </pre>
+
+
+    <h2>JavaScript Arrays</h2>
+    <p>JavaScript arrays are written with square brackets.</p>
+
+    <p>Array items are separated by commas.</p>
+
+    <p>The following code declares (creates) an array called <code>cars</code>, containing three items (car names):</p>
+
+    <pre>
+    <code>
+    let cars = ["Saab", "Volvo", "BMW"];
+    </code>
+    </pre>
+    <p>Array indexes are zero-based, which means the first item is <code>[0]</code>, the second item is <code>[1]</code>, and so on.</p>
+
+
+    <h2>JavaScript Objects</h2>
+    <p>JavaScript objects are written with curly braces <code>{}</code>.</p>
+
+    <p>Object properties are written as <code>name:value</code> pairs, separated by commas.</p>
+    <pre>
+        <code>
+        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        </code>
+    </pre>
+    <p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
+
+
+    <h2>The typeof Operator</h2>
+    <p>You can use the JavaScript <code>typeof</code> operator to find the type of a JavaScript variable.</p>
+
+    <p>The <code>typeof</code> operator returns the type of a variable or an expression:</p>
+    <pre>
+        <code>
+        typeof ""             // Returns "string"
+        typeof "John"         // Returns "string"
+        typeof "John Doe"     // Returns "string"
+        </code>
+        </pre>
+
+
+        
 </body>
 </html>
