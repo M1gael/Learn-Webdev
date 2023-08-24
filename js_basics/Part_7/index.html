@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 7</title>
+    <link rel="stylesheet" href="../../ClassWork/learning-out-comes-universal.css">
+</head>
+<body>
+
+<h1>JavaScript Part 7 : JavaScript Functions</h1>
+<p>
+
+    A JavaScript function is a block of code designed to perform a particular task.
+    
+    A JavaScript function is executed when "something" invokes it (calls it).
+</p>
+
+<hr>
+
+    <h2>JavaScript Function Syntax</h2>
+    <p><strong>A JavaScript function</strong> is defined with the <strong>function</strong> keyword, followed by a name, followed by parentheses <strong>()</strong>.</p>
+
+    <p><strong>Function names</strong> can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+
+    <p>The parentheses may include <strong>parameter names</strong> separated by commas:</p>
+    <blockquote>
+        (parameter1, parameter2, ...)
+    </blockquote>
+
+    <p>The code to be executed, by the function, is placed inside <strong>curly brackets</strong>: <strong>{}</strong></p>
+    <pre>
+        <code>
+        function name(parameter1, parameter2, parameter3) {
+          // code to be executed
+        }
+        </code>
+    </pre>
+    <p><strong>Function parameters</strong> are listed inside the parentheses <strong>()</strong> in the function definition.</p>
+
+    <p><strong>Function arguments</strong> are the values received by the function when it is invoked.</p>
+
+    <p>Inside the function, the arguments (the parameters) behave as local variables.</p>
+
+
+    <h2>Function Invocation</h2>
+    <p>The code inside the function will execute when "something" <strong>invokes (calls)</strong> the function:</p>
+
+    <ul>
+        <li>When an event occurs (when a user clicks a button)</li>
+        <li>When it is invoked (called) from JavaScript code</li>
+        <li>Automatically (self-invoked)</li>
+    </ul>
+
+    <p>You will learn a lot more about function invocation later in this tutorial.</p>
+
+
+    <h2>Function Return</h2>
+    <p>When JavaScript reaches a <code>return</code> statement, the function will stop executing.</p>
+
+    <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+
+    <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+    <pre>
+        <code>
+        // Function is called, the return value will end up in x
+        let x = myFunction(4, 3);
+        
+        function myFunction(a, b) {
+            // Function returns the product of a and b
+            return a * b;
+        }
+        </code>
+    </pre>
+
+    <div class="note">
+        <p><strong>Why Functions?</strong></p>
+
+        <p><em>With functions you can:</em></p>
+
+        <ul>
+            <li>Reuse code</li>
+            <li>Write code that can be used many times</li>
+            <li>Use the same code with different arguments, to produce different results</li>
+        </ul>
+    </div>
+
+
+    <h2>The () Operator</h2>
+
+    <p><em>The <code>()</code> operator invokes (calls) the function:</em></p>
+    <pre>
+        <code>
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit - 32);
+        }
+        
+        let value = toCelsius(77);
+        </code>
+    </pre>
+        
+
+    <h2>Local Variables</h2>
+    <p><strong>Variables declared within a JavaScript function, become LOCAL to the function.</strong></p>
+
+    <p><em>Local variables can only be accessed from within the function.</em></p>
+    <pre>
+        <code>
+        // code here can NOT use carName
+        
+        function myFunction() {
+          let carName = "Volvo";
+          // code here CAN use carName
+        }
+        
+        // code here can NOT use carName
+        </code>
+    </pre>
+        
+</body>
+</html>
