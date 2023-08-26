@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 10</title>
+    <link rel="stylesheet" href="../../ClassWork/learning-out-comes-universal.css">
+</head>
+<body>
+
+    <h1>JavaScript Part 10 :Strings</h1>
+
+<hr>
+
+    <h2>Escape Character</h2>
+
+    <p>Because strings must be written within quotes, JavaScript will misunderstand this string:</p>
+
+    <pre><code>let text = "We are the so-called "Vikings" from the north.";</code></pre>
+
+    <p>The string will be chopped to <code>"We are the so-called "</code>.</p>
+
+    <p>The solution to avoid this problem is to use the backslash escape character.</p>
+
+    <p>The backslash (<code>\</code>) escape character turns special characters into string characters:</p>
+
+    <table border="1" class="table-clean">
+        <tr>
+            <th>Code</th>
+            <th>Result</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>\'</code></td>
+            <td>'</td>
+            <td>Single quote</td>
+        </tr>
+        <tr>
+            <td><code>\"</code></td>
+            <td>"</td>
+            <td>Double quote</td>
+        </tr>
+        <tr>
+            <td><code>\\</code></td>
+            <td>\</td>
+            <td>Backslash</td>
+        </tr>
+    </table>
+
+    <p>The sequence <code>\"</code> inserts a double quote in a string:</p>
+
+    <pre><code>let text = "We are the so-called \"Vikings\" from the north.";</code></pre>
+    
+    <h3>Consider the following JavaScript code:</h3>
+
+    <pre><code>let text = "We are the so-called \"Vikings\" from the north.";</code></pre>
+
+    <p>In this example, the backslash (\) escape character is used to include double quotes within the string.</p>
+
+    <h3>Six other escape sequences are valid in JavaScript:</h3>
+
+    <table border="1" class="table-clean">
+        <tr>
+            <th>Code</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td><code>\b</code></td>
+            <td>Backspace</td>
+        </tr>
+        <tr>
+            <td><code>\f</code></td>
+            <td>Form Feed</td>
+        </tr>
+        <tr>
+            <td><code>\n</code></td>
+            <td>New Line</td>
+        </tr>
+        <tr>
+            <td><code>\r</code></td>
+            <td>Carriage Return</td>
+        </tr>
+        <tr>
+            <td><code>\t</code></td>
+            <td>Horizontal Tabulator</td>
+        </tr>
+        <tr>
+            <td><code>\v</code></td>
+            <td>Vertical Tabulator</td>
+        </tr>
+    </table>
+
+    <p>These escape sequences can be used to insert special characters within strings in JavaScript.</p>
+    <p class="note">The 6 escape characters above were originally designed to control typewriters, teletypes, and fax machines. They do not make any sense in HTML. </p>
+
+
+    <h2>Equality Operators</h2>
+    <p>JavaScript provides two equality operators for comparing strings: <code>==</code> and <code>===</code>.</p>
+
+    <h3>The <code>==</code> Operator</h3>
+    <p>The <code>==</code> operator compares values and converts the operands to the same type before making the comparison. When using <code>==</code>, strings and string objects are considered equal:</p>
+    <pre><code>let x = "John";
+    let y = new String("John");
+
+    if (x == y) {
+    document.write("x and y are equal using == operator");
+    }</code></pre>
+
+    <h3>The <code>===</code> Operator</h3>
+    <p>The <code>===</code> operator, also known as the strict equality operator, compares values and types without type conversion. When using <code>===</code>, strings and string objects are not considered equal:</p>
+    <pre><code>let x = "John";
+    let y = new String("John");
+
+    if (x === y) {
+    document.write("x and y are equal using === operator");
+    } else {
+    document.write("x and y are not equal using === operator");
+    }</code></pre>
+   
+</body>
+</html>
