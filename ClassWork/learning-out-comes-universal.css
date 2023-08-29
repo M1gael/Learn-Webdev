@@ -45,6 +45,12 @@ ul{
     margin-left: 15px;
 }
 
+pre{
+    margin-left: 30px;
+    background-color: greenyellow;
+    padding-left: 0;
+}
+
 .objectives h2{
     text-align: center;
     border: solid black 3px;

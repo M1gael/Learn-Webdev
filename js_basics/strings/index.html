@@ -208,13 +208,172 @@
     </code></pre>
     <p>If you omit the second parameter, <code>substr()</code> will slice out the rest of the string.</p>
 
+
+    <h2>Replacing String Content</h2>
+    <p>The <b>replace()</b> method replaces a specified value with another value in a string:</p>
+    <pre>
+        let text = "Please visit Microsoft!";
+        let newText = text.replace("Microsoft", "W3Schools");
+    </pre>
     <div class="note">
+    <h3>NOTE</h3>
     <p>The <code>replace()</code> method does not change the string it is called on.</p>
     <p>The <code>replace()</code> method returns a new string.</p>
     <p>The <code>replace()</code> method replaces only the first match.</p>
+    <p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
+    <p><pre>
+        let text = "Please visit Microsoft!";let newText = text.replace(/MICROSOFT/i, "W3Schools");</pre></p>
     <p>If you want to replace all matches, use a regular expression with the <code>/g</code> flag set. See examples below.</p>
-
+    <pre>
+    let text = "Please visit Microsoft and Microsoft!";
+    let newText = text.replace(/Microsoft/g, "W3Schools");
+    </pre>
     </div>
+
+
+    <h2>String replaceAll() Method Example</h2>
+    <p>In 2021, JavaScript introduced the string method <code>replaceAll()</code>:</p>
+    <pre>
+    text = text.replaceAll("Cats", "Dogs");
+    text = text.replaceAll("cats", "dogs");
+    </pre>
+    <p>The <code>replaceAll()</code> method allows you to specify a regular expression instead of a string to be replaced.</p>
+    <p>If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.</p>
+    
+    <pre>
+    text = text.replaceAll(/Cats/g, "Dogs");
+    text = text.replaceAll(/cats/g, "dogs");
+    </pre>
+  
+    <div class="note"> 
+        <h3>NOTE</h3>
+        <p>
+            replaceAll() is an ES2021 feature.
+            <br>
+            replaceAll() does not work in Internet Explorer.
+        </p>
+    </div>
+
+
+    <h2>Converting to Upper and Lower Case</h2>
+    <p>
+        A string is converted to upper case with toUpperCase():
+        <br>
+        A string is converted to lower case with toLowerCase():
+    </p>
+    <h3>toUpperCase()</h3>
+    <pre>
+        let text1 = "Hello World!";
+        let text2 = text1.toUpperCase();
+    </pre>
+ 
+    <h3>toLowerCase()</h3>
+    <pre>
+        let text1 = "Hello World!";       // String
+        let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+    </pre>
+
+
+    <h2>String concat()</h2>
+    <p>concat() joins two or more strings:</p>
+    <pre>
+        let text1 = "Hello";
+        let text2 = "World";
+        let text3 = text1.concat(" ", text2);
+    </pre>
+
+    <h3>Or the plus operator</h3>
+    <pre>
+        text = "Hello" + " " + "World!";
+        text = "Hello".concat(" ", "World!"); 
+    </pre>
+
+    <div class="note">
+        <h3>NOTE</h3>
+        <p>
+            All string methods return a new string. They don't modify the original string.
+    
+            Formally said:
+    
+            Strings are immutable: Strings cannot be changed, only replaced.
+        </p>
+    </div>
+   
+
+    <h2>String trim()</h2>
+    <p>The trim() method removes whitespace from both sides of a string:</p>
+    <pre>
+        let text1 = "      Hello World!      ";
+        let text2 = text1.trim();
+    </pre>
+
+    <h2>String trimEnd()</h2>
+    <p>The <b>trimEnd()</b> method works like <b>trim()</b>, but removes whitespace only from the end of a string.</p>
+    <pre>
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trimEnd();
+    </pre>
+
+
+    <h2>String Padding</h2>
+
+    <h3>String padStart()</h3>
+    <p>The <b>padStart()</b> method pads a string from the start with another string (multiple times) until it reaches a given length.</p>
+    <pre>
+    <code>
+    let text = "5";
+    let padded = text.padStart(4,"0");
+    console.log(padded); // "0005"
+    </code>
+    </pre>
+
+    <div class="note">
+        <h3>NOTE</h3>
+        <p>The <b>padStart()</b> method is a string method.
+
+            To pad a number, convert the number to a string first.
+            
+            See the example below.</p>
+
+            <pre>
+        let numb = 5;
+        let text = numb.toString();
+        let padded = text.padStart(4,"0");
+        console.log(padded); // "0005"
+            </pre>       
+    </div>
+    It pads a string with another string (multiple times) until it reaches a given length.</p>
+
+    <h3>padEnd()</h3>
+    <p>The <b>padEnd()</b> method pads a string from the end with another string (multiple times) until it reaches a given length.</p>
+<pre>
+<code>
+let text = "5";
+let padded = text.padEnd(4,"0");
+console.log(padded); // "5000"
+
+let text = "5";
+let padded = text.padEnd(4,"x");
+console.log(padded); // "5xx"
+</code>
+</pre>
+
+<div class="note">
+    <h3>NOTE</h3>
+<p>The <b>padEnd()</b> method is a string method.
+
+    To pad a number, convert the number to a string first.</p>
+    <pre>
+        <code>
+        let numb = 5;
+        let text = numb.toString();
+        let padded = text.padEnd(4,"0");
+        console.log(padded); // "0005"
+        </code>
+    </pre>
+</div>
+
+
 
 
 </body>
