@@ -117,5 +117,105 @@
     document.write("x and y are not equal using === operator");
     }</code></pre>
    
+    <p class="note">Comparing two JavaScript objects always returns false.</p>
+
+
+    <h2>String Methods</h2>
+    <ul>
+        <li><code>String.length</code></li>
+        <li><code>String.slice()</code></li>
+        <li><code>String.substring()</code></li>
+        <li><code>String.substr()</code></li>
+        <li><code>String.replace()</code></li>
+        <li><code>String.replaceAll()</code></li>
+        <li><code>String.toUpperCase()</code></li>
+        <li><code>String.toLowerCase()</code></li>
+        <li><code>String.concat()</code></li>
+        <li><code>String.trim()</code></li>
+        <li><code>String.trimStart()</code></li>
+        <li><code>String.trimEnd()</code></li>
+        <li><code>String.padStart()</code></li>
+        <li><code>String.padEnd()</code></li>
+        <li><code>String.charAt()</code></li>
+        <li><code>String.charCodeAt()</code></li>
+        <li><code>String.split()</code></li>
+    </ul>
+
+    <h3>String Length</h3>
+    <p>The <code>length</code> property returns the length of a string:</p>
+    <pre><code>
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text.length;
+    </code></pre>
+
+    <p>The length of the string is: <strong><span id="lengthValue"></span></strong></p>
+
+
+
+    <h3>Extracting String Parts</h3>
+    
+    <p>The <code>slice()</code> method extracts a part of a string and returns the extracted part in a new string:</p>
+    <pre><code>
+    let str = "Hello World";
+    let sliced = str.slice(0, 5); // Extracts "Hello"
+    </code></pre>
+
+    <p>The <code>substring()</code> method extracts a part of a string and returns the extracted part in a new string:</p>
+    <pre><code>
+    let str = "Hello World";
+    let sub = str.substring(6, 11); // Extracts "World"
+    </code></pre>
+
+    <p>The <code>substr()</code> method extracts a part of a string and returns the extracted part in a new string:</p>
+    <pre><code>
+    let str = "Hello World";
+    let substr = str.substr(0, 5); // Extracts "Hello"
+    </code></pre>
+
+    <h3>String slice()</h3>
+    <p><code>slice()</code> extracts a part of a string and returns the extracted part in a new string.</p>
+    <p>The method takes 2 parameters: start position and end position (end not included).</p>
+
+    <h4>Example</h4>
+    <p>Slice out a portion of a string from position 7 to position 13:</p>
+    <pre><code>
+    let text = "Apple, Banana, Kiwi";
+    let part = text.slice(7, 13);
+    </code></pre>
+
+
+    <h3>String substring()</h3>
+    <p><code>substring()</code> is similar to <code>slice()</code>.</p>
+    <p>The difference is that start and end values less than 0 are treated as 0 in <code>substring()</code>.</p>
+
+    <h4>Example</h4>
+    <p>Extract a portion of a string from position 7 to position 13:</p>
+    <pre><code>
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substring(7, 13);
+    </code></pre>
+
+
+    <h3>String substr()</h3>
+    <p><code>substr()</code> is similar to <code>slice()</code>.</p>
+    <p>The difference is that the second parameter specifies the length of the extracted part.</p>
+
+    <h4>Example</h4>
+    <p>Extract a portion of a string starting from position 7 and with a length of 6:</p>
+    <pre><code>
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(7, 6);
+    </code></pre>
+    <p>If you omit the second parameter, <code>substr()</code> will slice out the rest of the string.</p>
+
+    <div class="note">
+    <p>The <code>replace()</code> method does not change the string it is called on.</p>
+    <p>The <code>replace()</code> method returns a new string.</p>
+    <p>The <code>replace()</code> method replaces only the first match.</p>
+    <p>If you want to replace all matches, use a regular expression with the <code>/g</code> flag set. See examples below.</p>
+
+    </div>
+
+
 </body>
 </html>
