@@ -1,0 +1,13 @@
+body{
+    width: 100%;
+}
+
+
+#container-inputs{
+    width: 40%;
+    height: auto;
+    padding: 4px;
+    margin: auto;
+    display: block;
+    border: red solid 1px;
+}

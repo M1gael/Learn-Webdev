@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Date and Time</title>
+</head>
+<body>
+    <h1>Web development JavaScript Practice</h1>
+    <h2>Custom Date</h2>
+    <p>Here the entered date is displayed</p>
+    <div class='container-class' id="container-dateCustom">
+    </div>
+
+    <script>
+        const d = new Date(2023 , 08 , 30 , 14);   
+        
+        //Display
+        const dateContainer = document.getElementById('container-dateCustom');
+        dateContainer.textContent = 'Date ' + d.toLocaleString()
+    </script>
+
+
+
+    <h2>Current date</h2>
+    <p>Here the current date is displayed</p>
+    <div class='container-class' id="container-dateCurrent">
+    </div>
+
+    <script>
+        const dCurr = new Date();
+
+        const dateContainerCurrent = document.getElementById('container-dateCurrent');
+        dateContainerCurrent.textContent = 'Current date ' + dCurr.toLocaleString();
+    </script>
+
+
+
+    <h2>Timer</h2>
+    <p>Below is a timer</p>
+    <div class='container-class' id="container-timer">
+    </div>
+
+    <script>
+        const timerElement = document.getElementById('container-timer');  //Assign "variable" to the HTML element you want to change
+        let seconds = 0;            //variable for seconds
+
+        function updateTimer(){ //function to timer
+            seconds++;
+            timerElement.textContent = seconds + ' seconds'; 
+        }
+
+        //Start the timer and update every second
+        const timerInterval = setInterval(updateTimer , 1000);
+    </script>
+</body>
+</html>
