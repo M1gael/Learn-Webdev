@@ -1,2 +1,2 @@
 # WebDev
-Web Development using HTML ,CSS and Javascript
+a Practice and learning repository for all things web related 
